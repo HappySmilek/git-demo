@@ -1,6 +1,6 @@
 import pytest
 
-from cashback import test_calculate_cashback
+from app.cashback import test_calculate_cashback
 
 @pytest.mark.parametrize('summ, type_of_operation, expected', [
     (1000, 'original', 10.0),

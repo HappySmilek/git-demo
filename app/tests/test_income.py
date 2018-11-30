@@ -1,6 +1,6 @@
 import pytest
 
-from Income import calculate_income
+from app.income import calculate_income
 
 @pytest.mark.parametrize('summ, rate, period, expected', [
     (700000, 8, 12, 758100)

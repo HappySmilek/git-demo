@@ -1,4 +1,4 @@
-def test_calculate_cashback(summ, type_of_operation):
+def calculate_cashback(summ, type_of_operation):
     cashback = 0.
     if type_of_operation == 'vip':
         cashback = summ * 0.3
@@ -12,7 +12,7 @@ def test_calculate_cashback(summ, type_of_operation):
 
     return cashback
 
-summ = 0
+# summ = 0
 #print( 'original purchase =', test_calculate_cashback( 1000, 'original'))
 #print( 'vip =', test_calculate_cashback( 1000, 'vip') )
 #print( 'hight =', test_calculate_cashback( 1000, 'hight'))

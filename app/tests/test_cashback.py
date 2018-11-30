@@ -1,6 +1,6 @@
 import pytest
 
-from app.cashback import test_calculate_cashback
+from app.cashback import calculate_cashback
 
 @pytest.mark.parametrize('summ, type_of_operation, expected', [
     (1000, 'original', 10.0),
@@ -10,5 +10,5 @@ from app.cashback import test_calculate_cashback
 ])
 
 def test_cashback(summ, type_of_operation, expected):
-    actual = test_calculate_cashback(summ, type_of_operation)
+    actual = calculate_cashback(summ, type_of_operation)
     assert expected == actual
